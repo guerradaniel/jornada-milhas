@@ -14,6 +14,8 @@ import { ContainerComponent } from './shared/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing.module';
+import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { AppRoutingModule } from './app.routing.module';
     BannerComponent,
     CardComponent,
     ContainerComponent,
-    HomeComponent
+    HomeComponent,
+    CardBuscaComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { AppRoutingModule } from './app.routing.module';
     MatIconModule,
     MatButtonModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
